@@ -4,10 +4,10 @@ import "time"
 
 // DNSResult holds DNS lookup results.
 type DNSResult struct {
-	Host      string         `json:"host"`
-	Records   []DNSRecord    `json:"records"`
-	Duration  time.Duration  `json:"duration_ns"`
-	Error     string         `json:"error,omitempty"`
+	Host     string        `json:"host"`
+	Records  []DNSRecord   `json:"records"`
+	Duration time.Duration `json:"duration_ns"`
+	Error    string        `json:"error,omitempty"`
 }
 
 // DNSRecord is a single DNS record.
@@ -20,11 +20,11 @@ type DNSRecord struct {
 
 // PortScanResult holds port scanning results.
 type PortScanResult struct {
-	Host      string        `json:"host"`
-	Open      []PortInfo    `json:"open_ports"`
-	Filtered  []PortInfo    `json:"filtered_ports"`
-	Duration  time.Duration `json:"duration_ns"`
-	Error     string        `json:"error,omitempty"`
+	Host     string        `json:"host"`
+	Open     []PortInfo    `json:"open_ports"`
+	Filtered []PortInfo    `json:"filtered_ports"`
+	Duration time.Duration `json:"duration_ns"`
+	Error    string        `json:"error,omitempty"`
 }
 
 // PortInfo describes a single port.

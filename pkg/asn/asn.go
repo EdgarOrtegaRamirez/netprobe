@@ -22,23 +22,23 @@ type ASNResult struct {
 }
 
 type ipAPIASNResponse struct {
-	Status   string `json:"status"`
-	Query    string `json:"query"`
-	ASNStr   string `json:"as"`
-	Org      string `json:"org"`
-	CIDR     string `json:"asname"`
-	Country  string `json:"country"`
-	Message  string `json:"message,omitempty"`
+	Status  string `json:"status"`
+	Query   string `json:"query"`
+	ASNStr  string `json:"as"`
+	Org     string `json:"org"`
+	CIDR    string `json:"asname"`
+	Country string `json:"country"`
+	Message string `json:"message,omitempty"`
 }
 
 type teamCymruResponse struct {
-	ASN       uint32 `json:"asn"`
-	ASName    string `json:"as_name"`
-	CIDR      string `json:"cidr"`
-	Country   string `json:"country"`
-	Registry  string `json:"registry"`
-	Date      string `json:"date"`
-	IP        string `json:"ip"`
+	ASN      uint32 `json:"asn"`
+	ASName   string `json:"as_name"`
+	CIDR     string `json:"cidr"`
+	Country  string `json:"country"`
+	Registry string `json:"registry"`
+	Date     string `json:"date"`
+	IP       string `json:"ip"`
 }
 
 var httpClient = &http.Client{
